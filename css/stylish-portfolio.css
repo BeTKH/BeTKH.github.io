@@ -5,6 +5,10 @@
  */
 
 
+ /* -------------------------------------------------------------------------
+  FONTS
+----------------------------------------------------------------------------- */
+
  /* Font for the Name! */
  @font-face {
   font-family: 'Metro';
@@ -25,6 +29,8 @@
   src: url("../fonts/andalemo.ttf");
  }
 
+
+
 body,
 html {
   width: 100%;
@@ -36,11 +42,20 @@ body {
   font-family: 'Andale';
 }
 
+
+/* -------------------------------------------------------------------------
+  #informations  - ABOUT ME
+----------------------------------------------------------------------------- */
+
+
 #informations a{
   color: #0059ad !important;
   font-weight: 600;
 }
 
+/* -------------------------------------------------------------------------
+  style for text under projects: "Click here to see all my project"
+----------------------------------------------------------------------------- */
 .under-portfolio{
   color : #def0de;
   position : relative;
@@ -49,6 +64,12 @@ body {
   font-family: 'Michroma';
   transform: translateY(200px);
 }
+
+
+
+/* -------------------------------------------------------------------------
+  style for technical Skills Carousel: control arrow > and <
+----------------------------------------------------------------------------- */
 
 .controls-top a{
   transform: translateY(225px);
@@ -70,26 +91,49 @@ body {
   transform: translate(50px);
 }
 
+/*
+hover effect for the control arrow
+ */
 .controls-top .fa:hover{
   color: #def0de;
 }
 
+
+
+/*
+Left control arrow: 
+ */
 .leftarrow{
   float:left;
 }
 
+/*
+Right control arrow: 
+ */
 .rightarrow{
   float:right;
 }
 
+
+
+
+/*
+PROFILE PIC AND SOCIAL LINKS - PREVIOUSLY HOBBIES
+ */
 #hobbies, #influences {
   text-align: left;
   list-style: square;
 }
 
-#presentation{
+
+/*
+About ME - TEXT 
+ */
+#aboutme{
   text-align: justify;
 }
+
+
 
 #informations h2, #skills h2{
   margin-bottom: 1rem !important;
