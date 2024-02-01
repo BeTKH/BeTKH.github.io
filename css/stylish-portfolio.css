@@ -43,19 +43,188 @@ body {
 }
 
 
-/* -------------------------------------------------------------------------
-  #informations  - ABOUT ME
+/* ----------------------------------------------------------------------------
+  Section-I:
+  
+  #aboutSection  - Name | about text | Profile pic | social links | inspirations
 ----------------------------------------------------------------------------- */
 
+#aboutSection {
+  background-color: #adeed7 !important;
+  color :rgb(0, 0, 0) !important;
+}
 
-#informations a{
+#aboutSection a{
   color: #0059ad !important;
   font-weight: 600;
 }
 
-/* -------------------------------------------------------------------------
-  style for text under projects: "Click here to see all my project"
+
+#aboutSection h2{
+  margin-bottom: 1rem !important;
+  line-height: 0;
+}
+
+
+/* ----------------------------------------------------------------------------
+  Section-II:
+  
+ 
+  #skillSection - 
 ----------------------------------------------------------------------------- */
+#skillSection {
+  display: block !important;
+}
+#skills-phone-menu {
+  display: none !important;
+}
+#skills-computer-menu {
+  display: block !important;
+}
+
+#skills-phone img {
+  width: 370px;
+  height: 370px;
+  border : 1px solid #adeed7;
+}
+
+#skills-phone h4{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+#skills-phone .mb-5{
+  padding: 10px;
+}
+
+
+#skillSection h2{
+  margin-bottom: 1rem !important;
+  line-height: 0;
+}
+
+
+#skills-phone {
+  display: none !important;
+  background-color:rgb(0, 0, 0) !important;
+  color : #adeed7 !important;
+}
+
+
+
+#skillSection img {
+  width: 370px;
+  height: 370px;
+  border : 1px solid #adeed7;
+}
+
+#skills-phone {
+  display: block !important;
+}
+#skills {
+  display: none !important;
+}
+#skills-phone-menu {
+  display: block !important;
+}
+#skills-computer-menu {
+  display: none !important;
+}
+
+
+#skillSection {
+  background-color:rgb(0, 0, 0) !important;
+  color : #adeed7 !important;
+  height: 900px;
+}
+
+#skillSection .row {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#skillSection .carousel-indicators{
+  position: relative;
+}
+
+#skillSection .controls-top {
+  position: relative;
+}
+
+#skillSection .card{
+  background-color: rgb(0, 0, 0);
+}
+
+#skillSection .card-title {
+  font-family: 'Michroma';
+  font-weight: 800 !important;
+  font-size: 20px;
+}
+
+#skillSection .card-text {
+  font-size : 16px;
+  padding-top: 10px;
+}
+
+#skillSection .card-img-top {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------
+  Section-III:
+  
+ 
+  #experienceSection 
+
+----------------------------------------------------------------------------- */
+
+#experienceSection h2{
+  margin-bottom: 1rem !important;
+  line-height: 1.5;
+}
+
+#experienceSection {
+  background-color: #d9e7b0 !important;
+  color :rgb(0, 0, 0) !important;
+}
+
+
+.experience-down{
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 1000px){
+  #display-on-phone{
+    display: block !important;
+  }
+  h2{
+    font-size: 33px !important;
+  }
+  .experience-down{
+    padding-top: 0;
+  }
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------
+  Section-IV: PROJECTS
+  
+ 
+  #portfolio 
+
+----------------------------------------------------------------------------- */
+
+
+
+/* - style for text under projects: "Click here to see all my project"-- */
 .under-portfolio{
   color : #def0de;
   position : relative;
@@ -64,6 +233,115 @@ body {
   font-family: 'Michroma';
   transform: translateY(200px);
 }
+
+
+#portfolio {
+  background-color: rgb(0, 0, 0) !important;
+  color :#d9e7b0 !important;
+}
+
+
+.portfolio-item{
+  padding: 10px;
+}
+
+.portfolio-item img{
+  border : 2px solid #d9e7b0;
+}
+
+#portfolio .caption-content{
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1000px){
+  #portfolio .caption-content{
+    padding-top: 30px;
+  }
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-family: 'Andale';
+  font-size: 1.1rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color:#d9e7b0;
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+
+  .portfolio-item:hover .mb-0 {
+    visibility: visible;
+    font-weight: 800 !important;
+  }
+
+  .portfolio-item:hover .h2 {
+    visibility: visible;
+  }
+
+  .caption-content .h2{
+    color:rgb(0, 0, 0);
+    visibility: hidden;
+  }
+
+  .caption-content .mb-0{
+    color:rgb(0, 0, 0);
+    visibility: hidden;
+  }
+
+}
+
+
+
+
+/* ----------------------------------------------------------------------------
+  Section-V: FOOTER 
+  
+ 
+  #contact 
+
+----------------------------------------------------------------------------- */
+
 
 
 
@@ -135,57 +413,16 @@ About ME - TEXT
 
 
 
-#informations h2, #skills h2{
-  margin-bottom: 1rem !important;
-  line-height: 0;
-}
-
-#experience h2{
-  margin-bottom: 1rem !important;
-  line-height: 1.5;
-}
-
-#skills-phone {
-  display: none !important;
-  background-color:rgb(0, 0, 0) !important;
-  color : #adeed7 !important;
-}
-#skills {
-  display: block !important;
-}
-#skills-phone-menu {
-  display: none !important;
-}
-#skills-computer-menu {
-  display: block !important;
-}
-
-#skills-phone img {
-  width: 370px;
-  height: 370px;
-  border : 1px solid #adeed7;
-}
-
-#skills-phone h4{
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 20px;
-}
-
-#skills-phone .mb-5{
-  padding: 10px;
-}
 
 .nostyle{
   text-decoration: none;
   color :#d9e7b0;
 }
 
-#skills img {
-  width: 370px;
-  height: 370px;
-  border : 1px solid #adeed7;
-}
+
+
+
+
 
 .speicon {
   width: 60px;
@@ -196,33 +433,7 @@ About ME - TEXT
   display : none;
 }
 
-.experience-down{
-  padding-top: 30px;
-}
 
-@media screen and (max-width: 1000px){
-  #display-on-phone{
-    display: block !important;
-  }
-  #skills-phone {
-    display: block !important;
-  }
-  #skills {
-    display: none !important;
-  }
-  #skills-phone-menu {
-    display: block !important;
-  }
-  #skills-computer-menu {
-    display: none !important;
-  }
-  h2{
-    font-size: 33px !important;
-  }
-  .experience-down{
-    padding-top: 0;
-  }
-}
 
 #name-title{
   font-family: 'Metro';
@@ -254,10 +465,7 @@ h2{
   padding-bottom: 10px;
 }
 
-#portfolio h2{
-  padding-bottom: 0px !important;
-  margin-bottom: 0 !important;
-}
+
 
 .btn-xl {
   padding: 1.25rem 2.5rem;
@@ -305,49 +513,9 @@ h2{
   border-color: #def0de !important;
 }
 
-#informations {
-  background-color: #adeed7 !important;
-  color :rgb(0, 0, 0) !important;
-}
 
-#skills {
-  background-color:rgb(0, 0, 0) !important;
-  color : #adeed7 !important;
-  height: 900px;
-}
 
-#skills .row {
-  padding-left: 75px;
-  padding-right: 75px;
-}
 
-#skills .carousel-indicators{
-  position: relative;
-}
-
-#skills .controls-top {
-  position: relative;
-}
-
-#skills .card{
-  background-color: rgb(0, 0, 0);
-}
-
-#skills .card-title {
-  font-family: 'Michroma';
-  font-weight: 800 !important;
-  font-size: 20px;
-}
-
-#skills .card-text {
-  font-size : 16px;
-  padding-top: 10px;
-}
-
-#skills .card-img-top {
-  width: 300px;
-  height: 300px;
-}
 
 .btn-floating{
   font-size : 20px;
@@ -364,15 +532,8 @@ h2{
   padding: 25px;
 }
 
-#experience {
-  background-color: #d9e7b0 !important;
-  color :rgb(0, 0, 0) !important;
-}
 
-#portfolio {
-  background-color: rgb(0, 0, 0) !important;
-  color :#d9e7b0 !important;
-}
+
 
 .caption-content {
   color: #def0de !important;
@@ -637,95 +798,7 @@ strong {
   text-align:center;
 }
 
-.portfolio-item{
-  padding: 10px;
-}
 
-.portfolio-item img{
-  border : 2px solid #d9e7b0;
-}
-
-#portfolio .caption-content{
-  padding-top: 50px;
-}
-
-@media screen and (max-width: 1000px){
-  #portfolio .caption-content{
-    padding-top: 30px;
-  }
-}
-
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
-}
-
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-family: 'Andale';
-  font-size: 1.1rem;
-}
-
-@media (min-width: 992px) {
-  .portfolio-item {
-    max-width: none;
-    margin: 0;
-  }
-  .portfolio-item .caption {
-    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
-  .portfolio-item .caption .caption-content {
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
-  .portfolio-item img {
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-  .portfolio-item:hover .caption {
-    background-color:#d9e7b0;
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-
-  .portfolio-item:hover .mb-0 {
-    visibility: visible;
-    font-weight: 800 !important;
-  }
-
-  .portfolio-item:hover .h2 {
-    visibility: visible;
-  }
-
-  .caption-content .h2{
-    color:rgb(0, 0, 0);
-    visibility: hidden;
-  }
-
-  .caption-content .mb-0{
-    color:rgb(0, 0, 0);
-    visibility: hidden;
-  }
-
-}
 
 @media (max-width: 992px) {
   .caption-content .h2{
