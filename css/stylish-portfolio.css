@@ -66,12 +66,33 @@ body {
 }
 
 
+
+/* PROFILE PIC AND SOCIAL LINKS - PREVIOUSLY HOBBIES*/
+ #hobbies, #influences {
+  text-align: left;
+  list-style: square;
+}
+
+
+/* About ME - TEXT */
+#aboutme{
+  text-align: justify;
+}
+
+
+
+
 /* ----------------------------------------------------------------------------
   Section-II:
   
  
   #skillSection - 
 ----------------------------------------------------------------------------- */
+
+#skillSection h2{
+  font-size: 3rem;
+}
+
 #skillSection {
   display: block !important;
 }
@@ -173,6 +194,78 @@ body {
 }
 
 
+/*- buttons for the arrows -*/
+
+.btn-floating{
+  font-size : 20px;
+  color: #adeed7;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.btn-floating:hover{
+  color : #def0de;
+}
+
+.carousel-indicators {
+  padding: 25px;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------
+  style for technical Skills Carousel: control arrow > and <
+----------------------------------------------------------------------------- */
+
+.controls-top a{
+  transform: translateY(225px);
+  z-index: 99;
+}
+ 
+.controls-top .fa{
+  color: #adeed7;
+  padding: 0;
+}
+
+.controls-top .fa-chevron-left{
+  color: #adeed7;
+  transform: translate(-50px);
+}
+
+.controls-top .fa-chevron-right{
+  color: #adeed7;
+  transform: translate(50px);
+}
+
+/*
+hover effect for the control arrow
+ */
+.controls-top .fa:hover{
+  color: #def0de;
+}
+
+
+
+/*
+Left control arrow: 
+ */
+.leftarrow{
+  float:left;
+}
+
+/*
+Right control arrow: 
+ */
+.rightarrow{
+  float:right;
+}
+
+
+
 
 
 /* ----------------------------------------------------------------------------
@@ -182,6 +275,15 @@ body {
   #experienceSection 
 
 ----------------------------------------------------------------------------- */
+
+
+/*- icons for experience and education -*/
+.speicon {
+  width: 60px;
+  padding-bottom: 20px;
+}
+
+
 
 #experienceSection h2{
   margin-bottom: 1rem !important;
@@ -222,6 +324,10 @@ body {
 
 ----------------------------------------------------------------------------- */
 
+.nostyle{
+  text-decoration: none;
+  color :#d9e7b0;
+}
 
 
 /* - style for text under projects: "Click here to see all my project"-- */
@@ -274,6 +380,27 @@ body {
   font-family: 'Andale';
   font-size: 1.1rem;
 }
+
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 
 @media (min-width: 992px) {
   .portfolio-item {
@@ -333,6 +460,12 @@ body {
 
 
 
+.caption-content {
+  color: #def0de !important;
+}
+
+
+
 
 /* ----------------------------------------------------------------------------
   Section-V: FOOTER 
@@ -341,100 +474,100 @@ body {
   #contact 
 
 ----------------------------------------------------------------------------- */
-
-
-
-
-/* -------------------------------------------------------------------------
-  style for technical Skills Carousel: control arrow > and <
------------------------------------------------------------------------------ */
-
-.controls-top a{
-  transform: translateY(225px);
-  z-index: 99;
-}
- 
-.controls-top .fa{
-  color: #adeed7;
-  padding: 0;
+#Copyright {
+  color : rgb(0, 0, 0) !important;
 }
 
-.controls-top .fa-chevron-left{
-  color: #adeed7;
-  transform: translate(-50px);
-}
-
-.controls-top .fa-chevron-right{
-  color: #adeed7;
-  transform: translate(50px);
-}
-
-/*
-hover effect for the control arrow
- */
-.controls-top .fa:hover{
-  color: #def0de;
+#contact {
+  background-color: #d9e7b0 !important;
+  color :rgb(0, 0, 0) !important;
 }
 
 
-
-/*
-Left control arrow: 
- */
-.leftarrow{
-  float:left;
-}
-
-/*
-Right control arrow: 
- */
-.rightarrow{
-  float:right;
-}
-
-
-
-
-/*
-PROFILE PIC AND SOCIAL LINKS - PREVIOUSLY HOBBIES
- */
-#hobbies, #influences {
-  text-align: left;
-  list-style: square;
-}
-
-
-/*
-About ME - TEXT 
- */
-#aboutme{
-  text-align: justify;
-}
-
-
-
-
-.nostyle{
+/*----------.fa stands for "footer icon"-----------------*/
+.fa{
+  color: black;
+  font-size: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   text-decoration: none;
-  color :#d9e7b0;
+}
+
+.fa:hover{
+  color: #def0de;
+  text-decoration: none;
 }
 
 
-
-
-
-
-.speicon {
-  width: 60px;
-  padding-bottom: 20px;
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
+
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+/*- display content for mobile device-*/
 
 #display-on-phone{
   display : none;
 }
 
 
+/* ----------------------------------------------------------------------------
+  SCROLL TO THE TOP
+  
+ 
+  .scroll 
 
+----------------------------------------------------------------------------- */
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color : #def0de;
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #85d4be;
+  color :rgb(0, 0, 0);
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+
+
+/* ----------------------------------------------------------------------------
+  Section-0: LANDING PAGE 
+  
+ 
+  #name-title 
+----------------------------------------------------------------------------- */
 #name-title{
   font-family: 'Metro';
   font-size: 4vw;
@@ -465,12 +598,13 @@ h2{
   padding-bottom: 10px;
 }
 
-
-
+/*- button on the landing page-*/
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
 
+
+/*- button: scroll back to the landing page-*/
 #btn-home {
   padding : 0.3vw 0.7vw;
   background-color: #def0de !important;
@@ -488,134 +622,6 @@ h2{
   border-color: #def0de !important;
 }
 
-#btn-lang {
-  padding : 0.3vw 0.7vw;
-  background-color: #def0de !important;
-  color:rgb(0, 0, 0) !important;
-  position: absolute;
-  bottom : 20px;
-  left: 30px;
-  height: 32px;
-  font-size: 13px;
-  font-family: 'Michroma';
-  border-color: rgb(0, 0, 0) !important;
-}
-
-@media (max-width: 992px) {
-  #btn-lang {
-    height: 22px;
-  }
-}
-
-#btn-lang:hover {
-  background-color: rgb(0, 0, 0) !important;
-  color:#def0de !important;
-  border-color: #def0de !important;
-}
-
-
-
-
-
-.btn-floating{
-  font-size : 20px;
-  color: #adeed7;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.btn-floating:hover{
-  color : #def0de;
-}
-
-.carousel-indicators {
-  padding: 25px;
-}
-
-
-
-
-.caption-content {
-  color: #def0de !important;
-}
-
-#contact {
-  background-color: #d9e7b0 !important;
-  color :rgb(0, 0, 0) !important;
-}
-
-.row div {
-  display: inline-block !important;
-}
-
-.content-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  display: block;
-}
-
-.content-section-heading h2 {
-  font-size: 3rem;
-}
-
-#skills h2{
-  font-size: 3rem;
-}
-
-.content-section-heading h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 250;
-}
-
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
-.scroll-to-top {
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  background-color : #def0de;
-  line-height: 45px;
-}
-
-.scroll-to-top:focus, .scroll-to-top:hover {
-  color: white;
-}
-
-.scroll-to-top:hover {
-  background: #85d4be;
-  color :rgb(0, 0, 0);
-}
-
-.scroll-to-top i {
-  font-weight: 800;
-}
 
 .masthead {
   min-height: 30rem;
@@ -642,7 +648,106 @@ h6 {
   }
 }
 
-/* Side Menu */
+/* ----------------------------------------------------------------------------
+  COMMONS COMMONS COMMONS
+  
+
+----------------------------------------------------------------------------- */
+.row div {
+  display: inline-block !important;
+}
+
+.content-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: block;
+}
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+
+/*-buttons-*/
+.btn-primary {
+  background-color: rgb(0, 0, 0) !important;
+  border-color: #d9e7b0 !important;
+  color: #d9e7b0 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #155d74 !important;
+  border-color: #155d74 !important;
+}
+
+.btn-secondary {
+  background-color: rgb(0, 0, 0) !important;
+  border-color: #d9e7b0 !important;
+  color: #d9e7b0 !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: #1D809F !important;
+}
+
+
+/*-headers-*/
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 250;
+}
+
+a {
+  color: #1D809F;
+}
+
+a:hover, a:focus, a:active {
+  color: #155d74;
+}
+
+/* Map */
+
+/* ------------------map comment start
+.map {
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+--------------map comment end*/
+
+
+/* ----------------------------------------------------------------------------
+  SIDE BAR - MENU
+  
+
+----------------------------------------------------------------------------- */
+
 #sidebar-wrapper {
   position: fixed;
   z-index: 2;
@@ -676,18 +781,8 @@ h6 {
   font-family: 'Michroma';
 }
 
-.fa{
-  color: black;
-  font-size: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-decoration: none;
-}
 
-.fa:hover{
-  color: #def0de;
-  text-decoration: none;
-}
+
 
 .sidebar-nav li a:hover {
   text-decoration: none;
@@ -774,25 +869,6 @@ h6 {
   max-width: 30rem;
 }
 
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-}
-
-.portfolio-item .caption {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
 strong {
   font-family: 'Michroma';
   text-align:center;
@@ -821,70 +897,6 @@ strong {
   border: 0;
 }
 
-footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-footer.footer .social-link {
-  display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  background-color: rgb(0, 0, 0);
-  transition: background-color 0.15s ease-in-out;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-footer.footer .social-link:hover {
-  background-color: #155d74;
-  text-decoration: none;
-}
-
-a {
-  color: #1D809F;
-}
-
-a:hover, a:focus, a:active {
-  color: #155d74;
-}
-
-.btn-primary {
-  background-color: rgb(0, 0, 0) !important;
-  border-color: #d9e7b0 !important;
-  color: #d9e7b0 !important;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
-}
-
-.btn-secondary {
-  background-color: rgb(0, 0, 0) !important;
-  border-color: #d9e7b0 !important;
-  color: #d9e7b0 !important;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106 !important;
-  border-color: #ba9106 !important;
-}
-
-.btn-dark {
-  color: #fff !important;
-}
-
-.btn {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-  font-weight: 700;
-}
-
-.bg-primary {
-  background-color: #1D809F !important;
-}
-
 .text-primary {
   color: #1D809F !important;
 }
@@ -893,9 +905,7 @@ a:hover, a:focus, a:active {
   color: white !important;
 }
 
-#Copyright {
-  color : rgb(0, 0, 0) !important;
-}
+
 
 /*Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
