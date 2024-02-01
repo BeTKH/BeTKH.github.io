@@ -1,0 +1,149 @@
+/* ----------------------------------------------------------------------------
+  Section-IV: PROJECTS
+  
+ 
+  #portfolio 
+
+----------------------------------------------------------------------------- */
+
+.nostyle{
+    text-decoration: none;
+    color :#d9e7b0;
+  }
+  
+  
+  /* - style for text under projects: "Click here to see all my project"-- */
+  .under-portfolio{
+    color : #def0de;
+    position : relative;
+    bottom: 0px;
+    font-size: 0.7vw;
+    font-family: 'Michroma';
+    transform: translateY(200px);
+  }
+  
+  
+  #portfolio {
+    background-color: rgb(0, 0, 0) !important;
+    color :#d9e7b0 !important;
+  }
+  
+  
+  .portfolio-item{
+    padding: 10px;
+  }
+  
+  .portfolio-item img{
+    border : 2px solid #d9e7b0;
+  }
+  
+  #portfolio .caption-content{
+    padding-top: 50px;
+  }
+  
+  @media screen and (max-width: 1000px){
+    #portfolio .caption-content{
+      padding-top: 30px;
+    }
+  }
+  
+  .portfolio-item .caption .caption-content {
+    color: #fff;
+    margin: auto 2rem 2rem;
+  }
+  
+  .portfolio-item .caption .caption-content h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  
+  .portfolio-item .caption .caption-content p {
+    font-weight: 300;
+    font-family: 'Andale';
+    font-size: 1.1rem;
+  }
+  
+  
+  .portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+  }
+  
+  .portfolio-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  
+  @media (min-width: 992px) {
+    .portfolio-item {
+      max-width: none;
+      margin: 0;
+    }
+    .portfolio-item .caption {
+      transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, background-color 0.7s;
+      transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(0px);
+      clip-path: inset(0px);
+    }
+    .portfolio-item .caption .caption-content {
+      transition: opacity 0.25s;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      margin-bottom: 5rem;
+    }
+    .portfolio-item img {
+      transition: -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+      clip-path: inset(-1px);
+    }
+    .portfolio-item:hover img {
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+    .portfolio-item:hover .caption {
+      background-color:#d9e7b0;
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+  
+    .portfolio-item:hover .mb-0 {
+      visibility: visible;
+      font-weight: 800 !important;
+    }
+  
+    .portfolio-item:hover .h2 {
+      visibility: visible;
+    }
+  
+    .caption-content .h2{
+      color:rgb(0, 0, 0);
+      visibility: hidden;
+    }
+  
+    .caption-content .mb-0{
+      color:rgb(0, 0, 0);
+      visibility: hidden;
+    }
+  
+  }
+  
+  
+  
+  .caption-content {
+    color: #def0de !important;
+  }
+  
+  

@@ -1,0 +1,63 @@
+/* ----------------------------------------------------------------------------
+  Section-0: LANDING PAGE 
+  
+ 
+  #name-title 
+----------------------------------------------------------------------------- */
+#name-title{
+    font-family: 'Metro';
+    font-size: 4vw;
+    color: #def0de;
+    line-height: 70%;
+  }
+  
+  #under-title {
+    color : #def0de;
+    position : relative;
+    bottom: 0px;
+    font-size: 1vw;
+    font-family: 'Michroma';
+  }
+  
+  @media screen and (max-width: 1000px){
+    #name-title{
+      font-size: 6vw;
+    }
+    #under-title {
+      font-size: 1.8vw;
+    }
+  }
+  
+  h2{
+    font-family: 'Metro';
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+  
+  
+  
+  
+  .masthead {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  .masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+    }
+    .masthead h1 {
+      font-size: 5.5rem;
+    }
+  }

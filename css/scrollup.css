@@ -1,0 +1,34 @@
+/* ----------------------------------------------------------------------------
+  SCROLL TO THE TOP
+  
+ 
+  .scroll 
+
+----------------------------------------------------------------------------- */
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color : #def0de;
+    line-height: 45px;
+  }
+  
+  .scroll-to-top:focus, .scroll-to-top:hover {
+    color: white;
+  }
+  
+  .scroll-to-top:hover {
+    background: #85d4be;
+    color :rgb(0, 0, 0);
+  }
+  
+  .scroll-to-top i {
+    font-weight: 800;
+  }
+  
+  

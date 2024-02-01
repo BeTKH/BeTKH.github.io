@@ -1,0 +1,23 @@
+ /* -------------------------------------------------------------------------
+  FONTS
+----------------------------------------------------------------------------- */
+
+ /* Font for the Name! */
+ @font-face {
+  font-family: 'Metro';
+  src: url("../fonts/metro.ttf");
+ }
+
+
+ /* Font for "Interactive Resume & Portfolio" | "GitHub Profile" */
+ @font-face {
+  font-family: 'Michroma';
+  src: url("../fonts/Michroma.ttf");
+ }
+
+
+  /* Font for CONTENT */
+ @font-face {
+  font-family: 'Andale';
+  src: url("../fonts/andalemo.ttf");
+ }

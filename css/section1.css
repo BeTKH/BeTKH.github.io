@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------------------------
+  Section-I:
+  
+  #aboutSection  - Name | about text | Profile pic | social links | inspirations
+----------------------------------------------------------------------------- */
+
+#aboutSection {
+    background-color: #adeed7 !important;
+    color :rgb(0, 0, 0) !important;
+  }
+  
+  #aboutSection a{
+    color: #0059ad !important;
+    font-weight: 600;
+  }
+  
+  
+  #aboutSection h2{
+    margin-bottom: 1rem !important;
+    line-height: 0;
+  }
+  
+  
+  
+  /* PROFILE PIC AND SOCIAL LINKS - PREVIOUSLY HOBBIES*/
+   #hobbies, #influences {
+    text-align: left;
+    list-style: square;
+  }
+  
+  
+  /* About ME - TEXT */
+  #aboutme{
+    text-align: justify;
+  }

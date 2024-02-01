@@ -1,0 +1,45 @@
+/* ----------------------------------------------------------------------------
+  Section-III:
+  
+ 
+  #experienceSection 
+
+----------------------------------------------------------------------------- */
+
+
+/*- icons for experience and education -*/
+.speicon {
+    width: 60px;
+    padding-bottom: 20px;
+  }
+  
+  
+  
+  #experienceSection h2{
+    margin-bottom: 1rem !important;
+    line-height: 1.5;
+  }
+  
+  #experienceSection {
+    background-color: #d9e7b0 !important;
+    color :rgb(0, 0, 0) !important;
+  }
+  
+  
+  .experience-down{
+    padding-top: 30px;
+  }
+  
+  @media screen and (max-width: 1000px){
+    #display-on-phone{
+      display: block !important;
+    }
+    h2{
+      font-size: 33px !important;
+    }
+    .experience-down{
+      padding-top: 0;
+    }
+  }
+  
+  

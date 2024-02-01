@@ -1,0 +1,182 @@
+/* ----------------------------------------------------------------------------
+  Section-II:
+  
+ 
+  #skillSection - 
+----------------------------------------------------------------------------- */
+
+#skillSection h2{
+    font-size: 3rem;
+  }
+  
+  #skillSection {
+    display: block !important;
+  }
+  #skills-phone-menu {
+    display: none !important;
+  }
+  #skills-computer-menu {
+    display: block !important;
+  }
+  
+  #skills-phone img {
+    width: 370px;
+    height: 370px;
+    border : 1px solid #adeed7;
+  }
+  
+  #skills-phone h4{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  
+  #skills-phone .mb-5{
+    padding: 10px;
+  }
+  
+  
+  #skillSection h2{
+    margin-bottom: 1rem !important;
+    line-height: 0;
+  }
+  
+  
+  #skills-phone {
+    display: none !important;
+    background-color:rgb(0, 0, 0) !important;
+    color : #adeed7 !important;
+  }
+  
+  
+  
+  #skillSection img {
+    width: 370px;
+    height: 370px;
+    border : 1px solid #adeed7;
+  }
+  
+  #skills-phone {
+    display: block !important;
+  }
+  #skills {
+    display: none !important;
+  }
+  #skills-phone-menu {
+    display: block !important;
+  }
+  #skills-computer-menu {
+    display: none !important;
+  }
+  
+  
+  #skillSection {
+    background-color:rgb(0, 0, 0) !important;
+    color : #adeed7 !important;
+    height: 900px;
+  }
+  
+  #skillSection .row {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  
+  #skillSection .carousel-indicators{
+    position: relative;
+  }
+  
+  #skillSection .controls-top {
+    position: relative;
+  }
+  
+  #skillSection .card{
+    background-color: rgb(0, 0, 0);
+  }
+  
+  #skillSection .card-title {
+    font-family: 'Michroma';
+    font-weight: 800 !important;
+    font-size: 20px;
+  }
+  
+  #skillSection .card-text {
+    font-size : 16px;
+    padding-top: 10px;
+  }
+  
+  #skillSection .card-img-top {
+    width: 300px;
+    height: 300px;
+  }
+  
+  
+  /*- buttons for the arrows -*/
+  
+  .btn-floating{
+    font-size : 20px;
+    color: #adeed7;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .btn-floating:hover{
+    color : #def0de;
+  }
+  
+  .carousel-indicators {
+    padding: 25px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* -------------------------------------------------------------------------
+    style for technical Skills Carousel: control arrow > and <
+  ----------------------------------------------------------------------------- */
+  
+  .controls-top a{
+    transform: translateY(225px);
+    z-index: 99;
+  }
+   
+  .controls-top .fa{
+    color: #adeed7;
+    padding: 0;
+  }
+  
+  .controls-top .fa-chevron-left{
+    color: #adeed7;
+    transform: translate(-50px);
+  }
+  
+  .controls-top .fa-chevron-right{
+    color: #adeed7;
+    transform: translate(50px);
+  }
+  
+  /*
+  hover effect for the control arrow
+   */
+  .controls-top .fa:hover{
+    color: #def0de;
+  }
+  
+  
+  
+  /*
+  Left control arrow: 
+   */
+  .leftarrow{
+    float:left;
+  }
+  
+  /*
+  Right control arrow: 
+   */
+  .rightarrow{
+    float:right;
+  }
+  
